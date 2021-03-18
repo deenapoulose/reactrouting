@@ -15,7 +15,7 @@
   
   input[type="text"], input[type="email"], input[type="password"] {
     font-size: 0.9em;
-    color: #fff;
+    color:black;
     font-weight: 100;
     width: 94.5%;
     display: block;
@@ -29,7 +29,7 @@
     background-position: -800px 0;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: #fff;
+    color: black;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -44,27 +44,27 @@
   }
   
   ::-webkit-input-placeholder {
-    color: #fff;
+    color: black;
     font-weight: 100;
   }
   
   :-moz-placeholder {
     /* Firefox 18- */
-    color: #fff;
+    color:black;
   }
   
   ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #fff;
+    color: black;
   }
   
   :-ms-input-placeholder {
-    color: #fff;
+    color: black;
   }
   
   input[type="submit"] {
     font-size: .9em;
-    color: #fff;
+    color: black;
     background: #76b852;
     outline: none;
     border: 1px solid #76b852;

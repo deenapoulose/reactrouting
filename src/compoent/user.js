@@ -55,7 +55,7 @@ render() {
 
 					return(<tr id={index}>
 						<td>{item.name}</td>
-						<td><button onClick={()=> {this.handsub(index)}}>view</button></td>
+						<td><button className="newbut"onClick={()=> {this.handsub(index)}}>view</button></td>
 					</tr>)
 				})
 				}
