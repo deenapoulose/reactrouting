@@ -1,4 +1,7 @@
 import React,{Component } from "react"; 
+
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+
 import './user.css';
 
 class User extends Component{
@@ -26,17 +29,18 @@ async componentDidMount(){
 }
 
 handsub = (e) =>{
-	//alert(e);
+	
 	var str=JSON.parse(localStorage.getItem("localData"));
 	let newData = str.filter(function (id,index) {
 		return index == e;
 	   
 	   });
-	   console.log(newData)
+	//    console.log(newData)
 	   localStorage.setItem("detdata", JSON.stringify(newData));
 
 	
 }
+// {/* <button className="newbut"onClick={()=> {this.handsub(index)}}>view</button> */}
 
 render() {
 	return(
@@ -47,15 +51,15 @@ render() {
 		
 			<table>
 				<thead>
-					<th>name</th>
-					<th>view</th>
+					<th>Name</th>
+					<th>ACtion</th>
 				</thead>
 				<tbody>
 				{ this.state.list.map((item,index )=>{
 
 					return(<tr id={index}>
 						<td>{item.name}</td>
-						<td><button className="newbut"onClick={()=> {this.handsub(index)}}>view</button></td>
+						<td><Link to={`det/${index}`}>View</Link></td>
 					</tr>)
 				})
 				}

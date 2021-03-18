@@ -20,6 +20,8 @@ render() {
 			<Route exact path='/' component={Home}></Route> 
 			<Route exact path='/user' component={User}></Route> 
 			<Route exact path='/det' component={Det}></Route> 
+			<Route exact path='/det/:id' component={Det}></Route> 
+
 			</Switch> 
 		</div> 
 	</Router> 
