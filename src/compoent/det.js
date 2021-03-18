@@ -36,12 +36,12 @@ async componentDidMount(){
 return(
 	<div>
 		<label>Name</label>
-	<input type="text" value={item.name}></input><br></br>
+	<input type="text" value={item.name} readOnly></input><br></br>
 	
 	<label>Email</label>
-	<input type="text" value={item.email}></input><br></br>
+	<input type="text" value={item.email}readOnly></input><br></br>
 	<label>place</label>
-	<input type="text" value={item.place}></input><br></br>
+	<input type="text" value={item.place}readOnly></input><br></br>
 	</div>
 )
 })
