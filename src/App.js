@@ -11,17 +11,11 @@ render() {
 	return ( 
 	<Router> 
 		<div className="App"> 
-			<ul className="App-header"> 
-			<li> 
-				<Link to="/">Home</Link> 
-			</li> 
-			<li> 
-				<Link to="/user">User</Link> 
-			</li> 
-			<li> 
-				<Link to="/det">Details</Link> 
-			</li> 
-			</ul> 
+		<ul>
+     <li><  Link to="/" classNmae="active">Home</Link></li>
+      <li>< Link to="/user" >User</Link></li>
+     < li>< Link to="/det">Details</ Link></li>
+    </ul>
 			<Switch> 
 			<Route exact path='/' component={Home}></Route> 
 			<Route exact path='/user' component={User}></Route> 
